@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="project.css">
+</head>
+
+<body style="background-color: #fa6b2d;">
+
+
+
+	<script type="text/javascript">
+  
+  function validate(){
+    fn = document.getElementById("fullname").value;
+    em = document.getElementById("email").value;
+    pass = document.getElementById("password").value;
+    rad1 = document.getElementById("rad1").checked;
+    rad2 = document.getElementById("rad2").checked;
+    imp = document.getElementsByName("imp[]");
+    cnt = document.getElementById("cnt").value;
+
+    result = "";
+    for(i = 0; i < imp.length; i++){
+      if(imp[i].checked){
+        result += imp[i].value + ', ';
+      }
+    }
+
+    winR = open("", "", "width=500,height=500");
+    winR.document.write("<body>");
+    winR.document.write("<br/>Full Name: " + fn);
+    winR.document.write("<br/>Email: " + em);
+    winR.document.write("<br/>Password: " + pass);
+    winR.document.write("<br/>Gender: " + ((rad1)?'Male':'Female'));
+    winR.document.write("<br/>Imported: " + result);
+    winR.document.write("<br/>Country: " + cnt);
+    winR.document.write("</body>");
+    return false;
+  }
+  </script>
+  <form  onsubmit="return validate()">
+    <legend>Registration Form</legend>
+    <table width="50%"border="1" cellspacing="0" cellpadding="0">
+      <tr>
+
+        <td width="137">Name</td>
+        <td width="496"><input type="text" id="fullname"></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="text" id="email"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password" id="password"></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" id="rad1" value="Male">Male
+          <input type="radio" id="rad2" value="Female">Female
+        </td>
+      </tr>
+      <tr>
+        <td>Country</td>
+        <td>
+          <select id="cnt">
+            <option>Bangladesh</option>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>USA</option>
+            <option>UAE</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="checkbox" name="imp[]" value="Imported">Imported
+          <input type="checkbox" name="imp[]" value="Mofiz">Mofiz
+          <input type="checkbox" name="imp[]" value="Tofiz">Tofiz
+          <input type="checkbox" name="imp[]" value="Hafiz">Hafiz
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>
+          <input type="submit" value="Save" />
+        </td>
+      </tr>
+    </table>
+  </form>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/brands.min.js"></script>
+</body>
+</html>

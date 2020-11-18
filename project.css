@@ -1,0 +1,236 @@
+*{
+  padding:0;
+  margin: 0; 
+
+}
+img{
+  width:100%;
+}
+.backimg-tmr{
+  
+  position: fixed;
+  z-index: 100;
+  top:0;
+  background: #1d2124c2;
+
+}
+.home-48:visited{
+color:#f6eff3;
+}
+.needto-gap{
+
+   width: 100%;
+   background-color: #000;
+   position: relative;
+   padding-right: 0;
+   padding-left: 0;
+
+
+}
+.container-fluid.needto-gap .row {
+    margin: 0;
+}
+
+
+backimg-tmr a:hover{
+  color: #f2eff6;
+}
+
+
+
+
+.navbar-dark .navbar-nav .active>.nav-link, 
+.navbar-dark .navbar-nav .nav-link.active,
+ .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show>.nav-link{
+
+    color: #fa6b2d;
+  }
+
+.navbar-dark .navbar-nav .nav-link{
+
+  color: #fa6b2d;
+}
+
+.weaks-top{
+  text-align-last: center;
+  color:#fa6b2d;
+  font-size: 20px;
+}
+
+
+.beauty-beside{
+
+  background-color: #d8b4c0;
+  color: #000;
+  font-size:18px; 
+
+}
+
+.beauty-beside h6{
+  font-size: 25px;
+}
+
+.last-part{
+  float:left;
+padding-right: 80px;
+
+}
+.last-part a{
+color: #fa6b2d;
+text-decoration: none;
+}
+
+.middle-part{
+  float:left;
+padding-right: 80px;
+}
+
+.middle-part a{
+color: #fa6b2d;
+text-decoration: none;
+}
+
+.third-part{
+   float: left;
+padding-right: 80px;
+}
+.third-part a{
+color: #fa6b2d;
+text-decoration: none;
+}
+
+.forth-part{
+   float: left;
+ padding-right: 80px;  
+}
+
+.forth-part a{
+color: #fa6b2d;
+text-decoration: none;
+}
+.car-images{
+  
+  background-color:#000;
+  padding-top:  25px;
+}
+
+.car-one{
+  float: left;
+  color: #f6eff3;
+}
+.car-two{
+  float: left;
+  color: #f6eff3;
+}
+.car-three{
+  float: left;
+  color: #f6eff3;
+}
+.car-four{
+  float: left;
+  color: #f6eff3;
+}
+
+
+
+.new-login{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+padding: 0.75rem 0.25rem;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.Extra-product{
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.description-part{
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+
+.d-fle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0 ;
+}
+
+
+.te-border{
+  border: 1px #000 solid;
+}
